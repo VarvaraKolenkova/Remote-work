@@ -1,12 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-/* int ReversSignArray (int[] array)
-{
-    foreach (int elem in array)
-    {
-        array[i] = - array[i];
-    }
-    return array1;
-} */
+﻿// Замена знаков в массиве на противоположные
 int[] GetArray(int size)
 {
     int[] array = new int[size];
@@ -16,20 +8,19 @@ int[] GetArray(int size)
     }
     return array;
 }
-
-/* void FillArray(int[] array)
+int[] ChangeSignArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(-9, 10);
+      array[i] = - array[i];     
     }
-} */
+    return array;
+}
+
 void PrintArray(int[] array)
 {
     Console.WriteLine(string.Join(", ", array));
 }
 int[] array = GetArray(12);
-//int[] array = new int[12];
-//FillArray(array);
 PrintArray(array);
-//Console.WriteLine($"Массив наоборот: {ReversSignArray(array)}");
+Console.WriteLine(string.Join(", ", ChangeSignArray(array)));
