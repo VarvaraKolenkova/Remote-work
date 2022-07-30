@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Разница между максимальным и минимальным элементом массива вещественных чисел
 
 double[] array = {5.1, 8.2, 9.9, 25.8, 3.14, 14.2};
 
